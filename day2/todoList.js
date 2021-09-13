@@ -33,30 +33,56 @@ function reset() {
 function addTask(priority, contents) {
     const date = new Date();
     // console.log("TASK CREATE!!", { priority: PRIORITY[priority], contents, date });
-    //
     const tr = document.createElement("tr");
 
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
     const td3 = document.createElement("td");
     const td4 = document.createElement("td");
+    const td5 = document.createElement("td");
 
-    const checkBoxElement = document.createElement("input");
-    checkBoxElement.type = "checkbox";
-	td1.appendChild(checkBoxElement);
+    const doingCheckBoxElement = document.createElement("input");
+    const doneCheckBoxElement = document.createElement("input");
 
-    td2.innerText = PRIORITY[priority];
-    td3.innerText = contents;
-    td4.innerText = date.toLocaleString();
+    doingCheckBoxElement.type = "checkbox";
+    doneCheckBoxElement.type = "checkbox";
+    td1.appendChild(doingCheckBoxElement);
+    td2.appendChild(doneCheckBoxElement);
+
+    td3.innerText = PRIORITY[priority];
+    td4.innerText = contents;
+    td5.innerText = date.toLocaleString();
 
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
     tr.appendChild(td4);
-	
-	
-	// 고유한 ID값을 줄 수 있을까?
-	// 왜 리엑트에서 고유한 ID값을 어떻게 쓰는지?
+    tr.appendChild(td5);
+
+    // 고유한 ID값을 줄 수 있을까?
+    // 왜 리엑트에서 고유한 ID값을 어떻게 쓰는지?
 
     TableTodo.children[1].append(tr);
+    doingCheckBoxElement.addEventListener("click", (e) => checkDoing(e, tr));
+    doneCheckBoxElement.addEventListener("click", (e) => checkDone(e, tr));
+}
+
+function checkDoing(e, tr) {
+    const doneCheckBox = tr.children[1].children[0].checked;
+    tr.remove();
+    if (e.target.checked === true) {
+        doneCheckBox === true ? TableDone.children[1].append(tr) : TableDoing.children[1].append(tr);
+    } else {
+        doneCheckBox === true ? TableDone.children[1].append(tr) : TableTodo.children[1].append(tr);
+    }
+}
+
+function checkDone(e, tr) {
+    const doingCheckBox = tr.children[0].children[0].checked;
+    tr.remove();
+    if (e.target.checked === true) {
+        TableDone.children[1].append(tr);
+    } else {
+        doingCheckBox === true ? TableDoing.children[1].append(tr) : TableTodo.children[1].append(tr);
+    }
 }
