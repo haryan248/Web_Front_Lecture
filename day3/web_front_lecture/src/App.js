@@ -1,16 +1,17 @@
 import "./App.css";
-import Hello from "./Component/Hello";
-import BasicProps from "./Component/BasicProps";
-import ManyProps from "./Component/BasicProps";
-import ChildrenProps from "./Component/ChildrenProps";
-import ConditionalProps from "./Component/ConditionalProps";
-import StateExample from "./Component/StateExample";
-import Counter from "./Component/Counter";
+import Hello from "./Component/day3/Hello";
+import BasicProps from "./Component/day3/BasicProps";
+import ManyProps from "./Component/day3/BasicProps";
+import ChildrenProps from "./Component/day3/ChildrenProps";
+import ConditionalProps from "./Component/day3/ConditionalProps";
+import StateExample from "./Component/day3/StateExample";
+import Counter from "./Component/day3/Counter";
+import TodoList from "./Component/day4/TodoList";
 
 function App() {
     return (
         <div className="App">
-            <Hello></Hello>
+            {/* <Hello></Hello>
             <StateExample />
             <BasicProps name="hyunJoon" age="26" />
             <ManyProps name="hyunJoon" age="26" />
@@ -20,7 +21,8 @@ function App() {
                 <p>I am 26 years old</p>
             </ChildrenProps>
             <ConditionalProps name="hyunJoon" age="26" isVip={true} />
-            <Counter />
+            <Counter /> */}
+            <TodoList />
         </div>
     );
 }

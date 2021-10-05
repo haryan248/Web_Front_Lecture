@@ -1,0 +1,35 @@
+button[name="clear"] {
+    float: right;
+}
+
+table {
+    width: 100%;
+}
+
+.list_title {
+    font-size: 1rem;
+    font-weight: bold;
+
+    background-color: #fdf;
+}
+
+.form {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.list {
+    position: relative;
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+.list_title {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.list + .list {
+    border-top: 1px solid;
+}
