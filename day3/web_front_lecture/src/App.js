@@ -5,6 +5,7 @@ import ManyProps from "./Component/BasicProps";
 import ChildrenProps from "./Component/ChildrenProps";
 import ConditionalProps from "./Component/ConditionalProps";
 import StateExample from "./Component/StateExample";
+import Counter from "./Component/Counter";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <p>I am 26 years old</p>
             </ChildrenProps>
             <ConditionalProps name="hyunJoon" age="26" isVip={true} />
+            <Counter />
         </div>
     );
 }
