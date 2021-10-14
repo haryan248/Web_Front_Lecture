@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import TodoTable from "./TodoTable";
-import "../../style/TodoList.css";
-import { nextStepIndex, createDataId } from "../../util/pureFunc";
-import { TYPES } from "../../util/constantVal";
+import TodoTable from "../Component/day4/TodoTable";
+import "../style/TodoList.css";
+import { nextStepIndex, createDataId } from "../util/pureFunc";
+import { TYPES } from "../util/constantVal";
 const TodoList = () => {
     const [todo, setTodo] = useState("");
     const [priority, setPriority] = useState("normal");
