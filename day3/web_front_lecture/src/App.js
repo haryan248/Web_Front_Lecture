@@ -2,7 +2,7 @@ import "./App.css";
 import home from "./pages/home";
 import PropsExample from "./pages/props";
 import TodoList from "./pages/TodoList";
-import register from "./pages/register";
+import Register from "./pages/register";
 import { Route, Switch, withRouter } from "react-router-dom";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
                 <Route exact path="/" component={home} />
                 <Route exact path="/props" component={PropsExample} />
                 <Route exact path="/todo" component={TodoList} />
-                <Route exact path="/register" component={register} />
+                <Route exact path="/register" component={Register} />
             </Switch>
         </div>
     );

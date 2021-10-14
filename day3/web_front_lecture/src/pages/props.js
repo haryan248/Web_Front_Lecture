@@ -1,3 +1,5 @@
+import React from "react";
+
 import Hello from "../Component/day3/Hello";
 import BasicProps from "../Component/day3/BasicProps";
 import ManyProps from "../Component/day3/BasicProps";
@@ -5,6 +7,7 @@ import ChildrenProps from "../Component/day3/ChildrenProps";
 import ConditionalProps from "../Component/day3/ConditionalProps";
 import StateExample from "../Component/day3/StateExample";
 import Counter from "../Component/day3/Counter";
+
 const PropsExample = () => {
     return (
         <>

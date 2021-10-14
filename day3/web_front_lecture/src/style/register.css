@@ -1,0 +1,28 @@
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.register-input--container {
+    border: 2px solid #8f8f8f;
+    padding: 20px;
+}
+.register-input-name,
+.register-input-email,
+.register-input-number,
+.register-input-address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.error {
+    color: red;
+}
