@@ -3,7 +3,8 @@ import home from "./pages/home";
 import PropsExample from "./pages/props";
 import TodoList from "./pages/TodoList";
 import Register from "./pages/register";
-import { Route, Switch, withRouter } from "react-router-dom";
+import Reducer from "./pages/reducer";
+import { Route, Switch, withRouter } from "../node_modules/react-router-dom";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <Route exact path="/props" component={PropsExample} />
                 <Route exact path="/todo" component={TodoList} />
                 <Route exact path="/register" component={Register} />
+                <Route exact path="/reducer" component={Reducer} />
             </Switch>
         </div>
     );

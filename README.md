@@ -35,3 +35,13 @@ useEffect 실습
 4. 유저가 잘못된 정보를 입력한다면 form에서 어디가 잘 못됐는지 화면에 메세지를 출력합니다.
 
 5. 저장하기 버튼을 누르면 alert로 입력한 정보들이 모두 보여집니다.
+
+### 10/18(월) - 6주차
+
+useReducer 수업
+
+-   counter reducer 사용하여 실습
+
+contextAPI 사용법
+
+-   provider, consumer 사용
