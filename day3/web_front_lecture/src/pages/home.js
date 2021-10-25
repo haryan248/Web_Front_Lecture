@@ -15,7 +15,7 @@ const home = () => {
                     <Link to="register">5주차 과제</Link>
                 </button>
                 <button>
-                    <Link to="reducer">6주차 실습</Link>
+                    <Link to="reducer">6주차 실습, 7주차 실습</Link>
                 </button>
             </div>
         </>
