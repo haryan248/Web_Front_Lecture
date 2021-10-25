@@ -45,3 +45,19 @@ useReducer 수업
 contextAPI 사용법
 
 -   provider, consumer 사용
+
+## 10/25(월) - 7주차
+
+### Mobx 실습
+
+-   개념, 사용법
+
+#### todoList 실습
+
+-   contextAPI 사용
+-   useReducer 사용
+-   useReducer mobX로 교체
+
+-   useRef : 특정 dom 선택하기
+-   useEffect : side effect
+-   customHook : useContext(context) 를 커스텀 훅으로 사용
