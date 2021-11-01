@@ -33,7 +33,6 @@ const Todo = ({ title = "TodoList" }) => {
         // todoDispatch({ type: "DELETE", id });
     };
     const updateStatus = (id) => {
-        console.log(id);
         updateTodoStatus(id);
         // todoDispatch({ type: "UPDATE_STATUS", id });
     };

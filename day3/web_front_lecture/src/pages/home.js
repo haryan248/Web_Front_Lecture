@@ -17,6 +17,9 @@ const home = () => {
                 <button>
                     <Link to="reducer">6주차 실습, 7주차 실습</Link>
                 </button>
+                <button>
+                    <Link to="memo">8주차 실습</Link>
+                </button>
             </div>
         </>
     );

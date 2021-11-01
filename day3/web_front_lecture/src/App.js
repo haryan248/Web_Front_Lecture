@@ -4,6 +4,8 @@ import PropsExample from "./pages/props";
 import TodoList from "./pages/TodoList";
 import Register from "./pages/register";
 import Reducer from "./pages/reducer";
+import Memo from "./pages/memo";
+
 import { Route, Switch, withRouter } from "../node_modules/react-router-dom";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
                 <Route exact path="/todo" component={TodoList} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/reducer" component={Reducer} />
+                <Route exact path="/memo" component={Memo} />
             </Switch>
         </div>
     );
