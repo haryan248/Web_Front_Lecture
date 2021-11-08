@@ -80,6 +80,10 @@ contextAPI 사용법
 -   useEffect : side effect
 -   customHook : useContext(context) 를 커스텀 훅으로 사용
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51049245/140738893-94bfceed-9abe-4bed-8cfe-5b49fc91d307.png"/>
+</p>
+
 ## 11/01(월) - 8주차
 
 ## 나만의 메모장 만들어 보기 실습 1
