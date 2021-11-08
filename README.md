@@ -7,11 +7,23 @@
 -   React Props 설명
 -   useState 간단 사용법
 
+#### props 실습 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51049245/140735640-1076da2e-1bcc-4957-b208-865554c8c3f7.png"/>
+</p>
+
 ### 10/05(월) - 4주차
 
 -   이벤트 버블링
 -   이벤트 캡처링 조사
 -   vanilla js TodoLIst => react 로 변경
+
+#### todolist 실습 
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51049245/140735763-c7dd87fb-3657-4bac-ab42-593014cfc3b8.png"/>
+</p>
 
 ### 10/12(월) - 5주차
 
@@ -31,6 +43,12 @@ useEffect 실습
 -   이름은 3-5글자로 한다.
 -   이메일은 정규식을 통해 검사합니다. ( {userEmail}@{도메인}.{com, net, io 중 하나} )
 -   전화번호는 7-8자리로 하며 select로 지역번호를 선택합니다. 지역번호 선택 시, 주소의 광역시, 또는 국번에 맞춰 선택되어집니다. 만약 핸드폰 번호라면 선택하지 않습니다.
+
+### 회원가입 폼 화면
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51049245/140735485-2b384eac-bf9a-49be-bb17-1a54a9d679b9.png"/>
+</p>
 
 4. 유저가 잘못된 정보를 입력한다면 form에서 어디가 잘 못됐는지 화면에 메세지를 출력합니다.
 
