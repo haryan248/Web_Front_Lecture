@@ -1,38 +1,49 @@
+.memo_title {
+    text-align: center;
+}
 .memo_input--container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    box-shadow: 0 0 5px rgb(0 0 0 / 55%), -1px 2px 20px rgb(0 0 0 / 10%);
+    box-shadow: 0px 40px 50px 0 rgb(0 0 0 / 10%);
     border-radius: 10px;
     font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .memo_input--container .desc {
     margin-top: 10px;
 }
 .memo_input--container input,
-.memo_input--container input:focus,
-.memo-item-content input,
-.memo-item-content input:focus {
-    outline: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid #757577;
+.memo-item-content input {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 1px #ddd;
 }
 
 .memo_input--container textarea,
-.memo_input--container textarea:focus,
-.memo-item-content textarea,
-.memo-item-content textarea:focus {
-    outline: none;
-    resize: vertical; /* 상하만 가능 */
-    border: 1px solid #757577;
-    border-radius: 5px;
+.memo-item-content textarea {
+    height: 210 px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #333;
+    line-height: 26px;
     padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    resize: none;
 }
 
+.memo_input--container input:focus,
+.memo-item-content input:focus,
+.memo_input--container textarea:focus,
+.memo-item-content textarea:focus {
+    border-color: #f3c225;
+    font-weight: 300;
+    outline: none;
+}
 .action-button {
     color: white;
     height: 40px;
@@ -45,31 +56,32 @@
 }
 .memo_input--container .save-button {
     margin-top: 1rem;
-    background-color: #29bf6c;
+    background-color: #f3c225;
 }
 .memo-list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-top: 2rem;
-    width: 80%;
-    margin: auto;
-    font-size: larger;
+    transition: 0.5s;
 }
 .memo-item {
     padding: 1rem;
-    box-shadow: 0 0 5px rgb(0 0 0 / 5%), 0 5px 20px rgb(0 0 0 / 5%);
+    box-shadow: 1px 0px 50px 0 rgb(0 0 0 / 10%);
     border-radius: 10px;
     margin: 10px;
+    transition: 0.5s;
+    width: 26.6%;
+    display: inline-block;
+}
+.memo-item:hover {
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px 0 #f3c22578;
+}
+.memo-item__edit-content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 .memo_input--container div,
 .memo-item div {
     margin-bottom: 10px;
 }
-
 .memo-item-content {
     display: flex;
     flex-direction: column;
@@ -77,12 +89,16 @@
 .memo-item-content .register-date {
     font-size: small;
 }
-
 .memo-item-content .delete-button {
-    background-color: #eb4f4a;
+    border: 1px solid #333;
+    color: #333;
 }
-
 .memo-item-content .modify-button {
     margin-top: 1rem;
-    background-color: #3d8ee6;
+    background-color: #333;
+}
+.memo_error {
+    color: #f3c225;
+    margin-top: 0.4rem;
+    font-size: 1rem;
 }

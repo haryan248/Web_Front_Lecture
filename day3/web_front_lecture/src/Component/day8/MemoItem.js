@@ -8,13 +8,13 @@ export default function MemoItem({ memo, del, update }) {
     return (
         <div className="memo-item">
             <div className="memo-item-content">
-                <div className="register-date">최종 등록일 : {memo.date}</div>
+                <div className="register-date"> {memo.date}</div>
                 {edit ? (
                     <div>
                         <div>
                             제목 : <input type="text" value={memoTitleUpdateInput} onChange={(e) => setMemoTitleUpdateInput(e.target.value)} />
                         </div>
-                        <div>
+                        <div className="memo-item__edit-content">
                             내용 :
                             <textarea rows="5" cols="40" value={memoDescUpdateInput} onChange={(e) => setMemoDescUpdateInput(e.target.value)} />
                         </div>

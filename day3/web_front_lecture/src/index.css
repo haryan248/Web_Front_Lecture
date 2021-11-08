@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+.App {
+    font-family: "Apple SD Gothic NeoR", "Roboto", sans-serif;
+    color: #333;
+}
+input,
+textarea {
+    resize: none;
+    font-family: inherit;
+}
+::selection {
+    background: #f3c225;
+    color: #fff;
+}
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoB.ttf");
+    font-family: "Apple SD Gothic NeoB";
+}
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoEB.ttf");
+    font-family: "Apple SD Gothic NeoEB";
+}
+
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoH.ttf");
+    font-family: "Apple SD Gothic NeoH";
+}
+
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoM.ttf");
+    font-family: "Apple SD Gothic NeoM";
+}
+
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoR.ttf");
+    font-family: "Apple SD Gothic NeoR";
+}
+@font-face {
+    src: url("./assets/fonts/AppleSDGothicNeoSB.ttf");
+    font-family: "Apple SD Gothic NeoSB";
+}
