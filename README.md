@@ -77,3 +77,9 @@ contextAPI 사용법
 
 -   디자인, 애니메이션 추가
 -   빈 문자열입력 방지 (유효성 검사 추가)
+
+
+### 최종 메모장 실습 화면
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/51049245/140735041-33960690-5c7a-488e-a6db-395a12600756.png"/>
+</p>
